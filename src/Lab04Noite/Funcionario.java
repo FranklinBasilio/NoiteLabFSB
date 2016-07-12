@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lab03Funcionario;
+package Lab04Noite;
 
 /**
  *
@@ -39,8 +39,6 @@ public class Funcionario {
     }
     
     public double getBonificacao(){
-        return this.getSalario()*0.10;
+        return this.getSalario()*0.1;
     }
-    //metodos
-    
 }
