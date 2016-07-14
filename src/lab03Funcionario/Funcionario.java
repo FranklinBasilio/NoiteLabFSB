@@ -39,7 +39,7 @@ public class Funcionario {
     }
     
     public double getBonificacao(){
-        return this.getSalario()*0.10;
+        return this.salario*0.10;
     }
     //metodos
     

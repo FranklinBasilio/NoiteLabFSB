@@ -10,22 +10,20 @@ package lab03Funcionario;
  * @author usuario
  */
 public class Gerente extends Funcionario{
-    int senha=12345;
+   int senha = 12345;
     
     public boolean autenticarSenha(int senha){
-        if(this.senha==senha){
-            System.out.println("acesso permitido!");
+        if(this.senha == senha){
+            System.out.println("Acesso Permitido");
             return true;
         }else{
-            System.out.println("acesso negado!");
+            System.out.println("Acesso Negado");
             return false;
         }
-    }   
-    @Override
-        public double getBonificacao(){
-            return this.getSalario()*0.15+1000;
-        }
+    }
     
-    
+    public double getBonificacao(){
+        return super.getBonificacao()+1000;
+    }
     //outros metodos
 }

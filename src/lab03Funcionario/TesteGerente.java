@@ -12,14 +12,17 @@ package lab03Funcionario;
 public class TesteGerente {
     
     public static void main(String args[]){
-        Gerente g1 = new Gerente();
-        g1.setNome("pedro ivo");
-        g1.setCpf("11111111111");
-        g1.setSalario(1200);
-        g1.autenticarSenha(12345);
-        System.out.println("Nome:"+ g1.getNome());
-        System.out.println("Salario:"+g1.getSalario());
-        System.out.println("Bonificação"+g1.getBonificacao());
+        Gerente f1 = new Gerente();
+        f1.setNome("Pedro Ivo");
+        f1.setCpf("11122233344");
+        f1.setSalario(1000);
+        f1.autenticarSenha(12345);
+        
+        System.out.println("Nome: "+f1.getNome());
+        System.out.println("Salario: "+f1.getSalario());
+        System.out.println("Bonificacao "+f1.getBonificacao());
+        
+        
     }
     
 }
