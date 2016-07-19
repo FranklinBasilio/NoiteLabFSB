@@ -55,11 +55,11 @@ public class Funcionario {
     }
     
     public double getBonificacao(){
-        return this.getSalario()*0.1;
+        return this.getSalario();
     }
     
     public double getAdcionalNoturno(){
-        return this.getSalario()*0.25;
+        return this.getSalario();
     }
 
 }

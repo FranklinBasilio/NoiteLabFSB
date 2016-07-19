@@ -15,15 +15,21 @@ public class TesteGerente {
         ControleBonificacao controle = new ControleBonificacao();
         
         Gerente f1 = new Gerente();
+         
         f1.setNome("Joao de deus");
         f1.setCpf("0225588669");
         f1.setSalario(1000);
         f1.setSenha(1234);
-        controle.registrar(f1);
         
+       // controle.registrar(f1);
+        controle.setBonificacao(f1);
         Funcionario f2 = new Funcionario();
+        f2.setNome("maria augusta");
+        f2.setCpf("000111222584");
         f2.setSalario(1000);
-        controle.registrar(f2);
+        
+       controle.setBonificacao(f2);
+       // controle.registrar(f2);
         
         System.out.println("Total de bonificacoes: "+controle.getBonificacoes());
     }

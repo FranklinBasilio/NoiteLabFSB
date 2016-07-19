@@ -12,9 +12,13 @@ package Lab04Noite;
 public class ControleBonificacao {
      private double totalBonificacoes =0;
     
-    public void registrar(Funcionario f){
-        this.totalBonificacoes+= f.getBonificacao();
+   // public void registrar(Funcionario f){
+     //   this.totalBonificacoes+= f.getBonificacao();
+    //}
+    public void setBonificacao(Funcionario f){
+        this.totalBonificacoes+=f.getBonificacao();
     }
+    
     public double getBonificacoes(){
           return this.totalBonificacoes;
     }

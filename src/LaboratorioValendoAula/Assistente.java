@@ -14,12 +14,13 @@ public class Assistente extends Funcionario{
     
     //se for tecnico
     
-    
+    @Override
     public double getBonificacao(){
         return this.getSalario()*0.10;
     }
-    //se for administrativo
-    public double getBonificacao(){
-        return this.getSalario()*0.10;
+   
+    @Override//se for administrativo
+    public double getAdcionalNoturno(){
+        return this.getSalario()*0.25;
     }
 }
