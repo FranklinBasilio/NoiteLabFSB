@@ -1,4 +1,4 @@
-
+package LabExcecoesNoite;
 
 import java.util.InputMismatchException;
 
@@ -10,7 +10,8 @@ public class Calculadora {
             return numerador/denominador;
         }catch (Exception e){
             System.out.println("Erro "+e.getMessage());
+            return -1;
         }
-        return 0;
+        //return 0;
     }
 }

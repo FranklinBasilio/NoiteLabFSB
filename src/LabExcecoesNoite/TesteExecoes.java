@@ -1,3 +1,5 @@
+package LabExcecoesNoite;
+
 
 public class TesteExecoes {
     static void metodo1(){
@@ -15,8 +17,10 @@ public class TesteExecoes {
         }
         }catch(Exception e){
             System.out.println("Erro "+e.getMessage());
+        }finally{
+            
         }
-        System.out.println("Fim do metodo 2");
+        
     }
     public static void main(String args[]){
         System.out.println("Inicio do main");
